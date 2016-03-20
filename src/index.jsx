@@ -1,6 +1,4 @@
-/* @flow */
-
-//require('!style!css!sass!./style/my-style.scss');
+require('./style/my-style.scss');
 
 import ReactDOM from 'react-dom';
 import React from 'react';
