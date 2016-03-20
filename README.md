@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/EuDgee/Scrum-Poker-App.svg?branch=master)](https://travis-ci.org/EuDgee/Scrum-Poker-App)
-
-# Scrum-Poker Application
+# Scrum-Poker Application [![Build Status][build-badge]][build] [![Coverage Status][coveralls-badge]][coveralls] 
 
 React.JS based application for scrum poker.
 
@@ -13,3 +11,10 @@ Planned to do:
 
 ### Global dependencies for dev environment:
 `npm install webpack webpack-dev-server -g`
+
+
+[build-badge]: https://travis-ci.org/EuDgee/Scrum-Poker-App.svg?branch=master
+[build]: https://travis-ci.org/EuDgee/Scrum-Poker-App
+
+[coveralls-badge]: https://coveralls.io/repos/github/EuDgee/Scrum-Poker-App/badge.svg?branch=master
+[coveralls]: https://coveralls.io/github/EuDgee/Scrum-Poker-App?branch=master
