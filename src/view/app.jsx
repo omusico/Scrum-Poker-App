@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import MyComponent from './my-component.jsx';
 

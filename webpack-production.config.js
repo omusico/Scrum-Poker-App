@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const WebpackStripLoader = require('strip-loader');
 const devConfig = require('./webpack.config.js');
 const stripLoader = {

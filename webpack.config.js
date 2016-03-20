@@ -1,15 +1,20 @@
+'use strict';
+
 const path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'public');
 var SOURCE_DIR = path.resolve(__dirname, 'src');
 
-var config = {
+module.exports = {
   entry: path.resolve(SOURCE_DIR, 'index.jsx'),
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
   module: {
+    preLoaders: [
+      { test: /\.jsx$/, loader: 'eslint-loader', exclude: /node_modules/ }
+    ],
     loaders: [
       { test: /\.css$/,  loader: "style!css" },
       { test: /\.jsx$/,  loader: 'babel', include: SOURCE_DIR },
@@ -17,5 +22,3 @@ var config = {
     ]
   }
 };
-
-module.exports = config;
