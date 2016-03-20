@@ -1,4 +1,4 @@
-# Scrum-Poker Application [![Build Status][build-badge]][build] [![Coverage Status][coveralls-badge]][coveralls] 
+# Scrum-Poker Application [![Build Status][build-badge]][build] [![Coverage Status][codecov-badge]][codecov] 
 
 React.JS based application for scrum poker.
 
@@ -16,5 +16,5 @@ Planned to do:
 [build-badge]: https://travis-ci.org/EuDgee/Scrum-Poker-App.svg?branch=master
 [build]: https://travis-ci.org/EuDgee/Scrum-Poker-App
 
-[coveralls-badge]: https://coveralls.io/repos/github/EuDgee/Scrum-Poker-App/badge.svg?branch=master
-[coveralls]: https://coveralls.io/github/EuDgee/Scrum-Poker-App?branch=master
+[codecov-badge]: https://codecov.io/github/EuDgee/Scrum-Poker-App/coverage.svg?branch=master
+[codecov]: https://codecov.io/github/EuDgee/Scrum-Poker-App?branch=master
