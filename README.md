@@ -1,3 +1,5 @@
+# ! Work in progress! Not ready yet!
+
 # Scrum-Poker Application [![Build Status][build-badge]][build] [![Coverage Status][codecov-badge]][codecov] 
 
 React.JS based application for scrum poker.

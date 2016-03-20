@@ -37,7 +37,7 @@ module.exports = {
 
           data = data.replace(
               '</head>',
-              '<link rel="stylesheet" href="./css/style.css"/></head>');
+              '<link rel="stylesheet" href="/css/style.css"/></head>');
 
           fs.writeFile(OUTPUT_DIR + '/index.html', data, 'utf8', function(error) {
             if (error) {
