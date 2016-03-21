@@ -10,6 +10,6 @@ describe('App', () => {
   it('renders correctly', () => {
     const app = TestUtils.renderIntoDocument(<App />);
     const appNode = ReactDOM.findDOMNode(app);
-    expect(appNode.textContent).toEqual('It works!');
+    expect(appNode.textContent).toEqual('Scrum Poker App!');
   });
 });
