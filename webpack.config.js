@@ -13,6 +13,9 @@ module.exports = {
     path: OUTPUT_DIR,
     filename: 'js/bundle.js'
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx', 'css', '.scss']
+  },
   module: {
     preLoaders: [
       { test: /\.jsx$/, loader: 'eslint-loader', exclude: /node_modules/ }

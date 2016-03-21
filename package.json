@@ -32,7 +32,7 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "start": "webpack-dev-server --config webpack.config.js -d --inline --hot --output-public-path=/public/",
+    "start": "webpack-dev-server --content-base public/ -d --inline --hot --output-public-path=/public/",
     "coverage": "jest --coverage",
     "prod": "webpack --config webpack-production.config.js -p"
   },

@@ -1,6 +1,10 @@
 /* @flow */
 
 import React from 'react';
-import MyComponent from './my-component.jsx';
+import MyComponent from './MyComponent';
 
-export default () => <MyComponent />;
+export default class App extends React.Component {
+  render() {
+    return <MyComponent />;
+  }
+}
