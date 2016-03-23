@@ -1,10 +1,18 @@
 /* @flow */
 
 import React from 'react';
-import MyComponent from './MyComponent';
+import StartScreen from './StartScreen';
+import Header from './Header';
 
 export default class App extends React.Component {
   render() {
-    return <MyComponent />;
+    return (
+        <div>
+          <Header />
+          <StartScreen>
+            {this.props.children}
+          </StartScreen>
+        </div>
+    );
   }
 }

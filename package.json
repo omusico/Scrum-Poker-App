@@ -32,7 +32,8 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "start": "webpack-dev-server --content-base public/ -d --inline --hot --output-public-path=/public/",
+    "jest": "jest --watch --watchExtensions=js,jsx",
+    "start": "webpack-dev-server --content-base public/ -d --inline --hot --host 0.0.0.0",
     "coverage": "jest --coverage",
     "prod": "webpack --config webpack-production.config.js -p"
   },
