@@ -1,6 +1,7 @@
 /* @flow */
 
 import React from 'react';
+import {Seq} from 'immutable';
 
 export default class Advice extends React.Component {
   tip: string;
@@ -8,7 +9,7 @@ export default class Advice extends React.Component {
   constructor() {
 
     super();
-    const tips: Array<string> = [
+    const tips: Seq = Seq.of(
       'Keep it simple and get rid of big cards.',
       'There always someone who shows their cards too early…',
       'Use a timer to limit discussion.',
@@ -18,10 +19,10 @@ export default class Advice extends React.Component {
       'Stop implementation discussions before they go too deep.',
       'Managers don’t vote.',
       'Those who actually could do the work are the ones that vote.'
-    ];
+    );
 
-    const index: number = Math.floor(tips.length * Math.random());
-    this.tip = tips[index];
+    const index: number = Math.floor(tips.size * Math.random());
+    this.tip = tips.get(index);
   }
   render() {
     return (
