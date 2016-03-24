@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 import Header from '../Header';
+import {expect} from 'chai';
 
 describe('Header', () => {
   beforeEach(function() {
@@ -12,13 +13,13 @@ describe('Header', () => {
   });
 
   it('has correct className', function() {
-    expect(this.node.className).toBe('header');
+    expect(this.node.className).to.equal('header');
   });
   it('has correct content', function() {
-    expect(this.node.textContent).toBe('Scrum Poker');
+    expect(this.node.textContent).to.equal('Scrum Poker');
   });
   it('has settings button', function() {
-    expect(this.node.children.length).toBe(2);
-    expect(this.node.children[1].className).toBe('header__settings');
+    expect(this.node.children).to.have.lengthOf(2);
+    expect(this.node.children[1].className).to.equal('header__settings');
   });
 });

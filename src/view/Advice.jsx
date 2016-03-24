@@ -3,9 +3,12 @@
 import React from 'react';
 
 export default class Advice extends React.Component {
+  tip: string;
+
   constructor() {
+
     super();
-    const tips = [
+    const tips: Array<string> = [
       'Keep it simple and get rid of big cards.',
       'There always someone who shows their cards too early…',
       'Use a timer to limit discussion.',
@@ -17,7 +20,7 @@ export default class Advice extends React.Component {
       'Those who actually could do the work are the ones that vote.'
     ];
 
-    const index = Math.floor(tips.length * Math.random());
+    const index: number = Math.floor(tips.length * Math.random());
     this.tip = tips[index];
   }
   render() {

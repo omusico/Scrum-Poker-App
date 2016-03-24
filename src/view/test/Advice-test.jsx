@@ -1,5 +1,6 @@
 jest.unmock('../Advice');
 
+import {expect} from 'chai';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
@@ -12,18 +13,15 @@ describe('Advice', () => {
   });
 
   it('has correct className', function() {
-    expect(this.node.className).toEqual('start__caption');
+    expect(this.node.className).to.equal('start__caption');
   });
 
   it('has correct content', function() {
-    expect(typeof this.node.textContent).toEqual('string');
-    expect(this.node.textContent).not.toEqual('');
+    expect(typeof this.node.textContent).to.equal('string');
+    expect(this.node.textContent).not.to.equal('');
     const lastLetter = this.node.textContent
         .charAt(this.node.textContent.length - 1);
 
-    expect(['.', '!', '…', '?']
-        .map((c) => c === lastLetter)
-        .reduce((a, b) => a || b))
-        .toBe(true);
+    expect(lastLetter).to.be.oneOf(['.', '!', '…', '?']);
   });
 });
