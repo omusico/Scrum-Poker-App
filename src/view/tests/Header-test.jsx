@@ -1,10 +1,10 @@
 jest.unmock('../Header');
 
+import {expect} from 'chai';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 import Header from '../Header';
-import {expect} from 'chai';
 
 describe('Header', () => {
   beforeEach(function() {

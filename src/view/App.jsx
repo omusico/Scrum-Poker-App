@@ -9,9 +9,7 @@ export default class App extends React.Component {
     return (
         <div>
           <Header />
-          <StartScreen>
-            {this.props.children}
-          </StartScreen>
+          <StartScreen />
         </div>
     );
   }
