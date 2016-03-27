@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/node_modules/config-chain/.*
+.*/node_modules/npmconf/.*
+
+[include]
+src/*.jsx
+public/.*
+
+[libs]
+
+[options]

@@ -1,5 +1,6 @@
 ### NPM ###
 /node_modules
+npm-debug.log*
 
 ### Max OS ###
 .DS_Store
@@ -9,7 +10,5 @@
 .idea
 
 ### Build artefacts ###
-/public/*.js
-/public/*.css
+/public
 /coverage
-*.log
