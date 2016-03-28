@@ -16,5 +16,7 @@ describe('StartScreen', () => {
     expect(this.node.className).to.equal('start');
   });
 
-  xit('draws its children', function() {});
+  it('draws some content', function() {
+    expect(this.node.children).to.have.length.greaterThan(0);
+  });
 });

@@ -12,7 +12,7 @@ describe('CTAButton', () => {
     this.node = ReactDOM.findDOMNode(component);
   });
 
-  xit('has correct className', function() {
+  it('has correct className', function() {
     expect(this.node.className).to.equal('cta-button');
   });
 });

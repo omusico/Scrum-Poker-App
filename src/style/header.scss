@@ -22,4 +22,16 @@
   margin: 10px;
   background-image: url('/img/settings.svg');
   background-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.header__settings:hover {
+  transition: transform 0.3s;
+  transform: rotateZ(90deg);
+}
+
+.header__settings:active {
+  transition: transform 0.3s;
+  transform: rotateZ(180deg);
 }

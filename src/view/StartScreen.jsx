@@ -18,7 +18,7 @@ export default class StartScreen extends React.Component {
                    placeholder="Enter your name"/>
             <SelectRole />
             <Footer>
-              <a>Donate to support</a>
+              <a href="#">Donate to support</a>
               <p>App created by Evgeny Mikheev</p>
               <p>Coffee Icon by Jacob Halton from the Noun Project,
                 Cards Icon by Henry Ryder from the Noun Project,
