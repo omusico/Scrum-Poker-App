@@ -16,5 +16,15 @@ describe('StartShade', () => {
     expect(this.node.className).to.equal('start-shade');
   });
 
-  xit('draw children inside', function() {});
+  it('draw children inside', function() {
+    expect(this.node.children).to.have.lengthOf(0);
+    const node = ReactDOM.findDOMNode(TestUtils.renderIntoDocument(
+        <StartShade>
+          <div>div</div>
+          <a>link</a>
+        </StartShade>
+    ));
+    expect(node.children).to.have.lengthOf(2);
+  });
 });
+

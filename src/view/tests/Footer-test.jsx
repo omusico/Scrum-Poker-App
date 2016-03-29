@@ -12,9 +12,19 @@ describe('Footer', () => {
     this.node = ReactDOM.findDOMNode(component);
   });
 
-  xit('has correct className', function () {
-    expect(this.node.className).to.equal('footer-test');
+  it('has correct className', function () {
+    expect(this.node.className).to.equal('footer');
   });
 
-  xit('draws its children', function() {});
+  it('draws its children', function() {
+    expect(this.node.children).to.have.lengthOf(0);
+    const node = ReactDOM.findDOMNode(TestUtils.renderIntoDocument(
+        <Footer>
+          <div></div>
+          <span>ada</span>
+          <object>d</object>
+        </Footer>
+    ));
+    expect(node.children).to.have.lengthOf(3);
+  });
 });
