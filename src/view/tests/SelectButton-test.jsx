@@ -17,10 +17,11 @@ describe('SelectButton', () => {
   });
 
   it('draws text inside', function() {
+    const TEXT = 'example text';
     const node = ReactDOM.findDOMNode(TestUtils.renderIntoDocument(
-        <SelectButton>text</SelectButton>)
+        <SelectButton>{TEXT}</SelectButton>)
     );
     expect(this.node.textContent).to.be.empty;
-    expect(node.textContent).to.equal('text');
+    expect(node.textContent).to.equal(TEXT);
   });
 });
