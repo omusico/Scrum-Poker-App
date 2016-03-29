@@ -19,5 +19,7 @@ describe('SelectRole', () => {
     expect(this.node.children[2].tagName).to.equal('SPAN');
   });
 
+  xit('has text in buttons to select roles', function() {});
+
   xit('has checkbox, active only for Scrum Master', function () {});
 });
