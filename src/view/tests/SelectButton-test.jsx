@@ -13,7 +13,7 @@ describe('SelectButton', () => {
   });
 
   it('has correct className', function () {
-    expect(this.node.className).to.equal('select-button');
+    expect(this.node.className).to.contain('select-button');
   });
 
   it('draws text inside', function() {
@@ -22,6 +22,6 @@ describe('SelectButton', () => {
         <SelectButton>{TEXT}</SelectButton>)
     );
     expect(this.node.textContent).to.be.empty;
-    expect(node.textContent).to.equal(TEXT);
+    expect(node.textContent).to.contain(TEXT);
   });
 });
