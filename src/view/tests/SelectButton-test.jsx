@@ -12,13 +12,16 @@ describe('SelectButton', () => {
     this.node = ReactDOM.findDOMNode(component);
   });
 
-  xit('has correct className', function () {
-    expect(this.node.className).to.equal('select-button');
+  it('has correct className', function () {
+    expect(this.node.className).to.contain('select-button');
   });
 
-  xit('has correct className when active', function () {
-    expect(this.node.className).to.equal('select-button active');
+  it('draws text inside', function() {
+    const TEXT = 'example text';
+    const node = ReactDOM.findDOMNode(TestUtils.renderIntoDocument(
+        <SelectButton>{TEXT}</SelectButton>)
+    );
+    expect(this.node.textContent).to.be.empty;
+    expect(node.textContent).to.contain(TEXT);
   });
-
-  xit('draws text inside', function() {});
 });
